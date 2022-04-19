@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website | Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="banner-box">
+        <div class="logo-box">
+            <img src="assets/odin-lined.png" alt="The Odin Project Logo">
+            <h1>Odin</h1>
+        </div>
+    </div>
+
+    <div class="form-box">
+        <div>
+            <p>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <i>now</i> to get started.</p>
+            <p>You <i>know</i> you want to.</p>
+        </div>
+        <div>
+            <p>Let's do this!</p>
+            <form id="create-account" action="#" method="post">
+                <div>
+                    <label for="first-name">
+                    First Name
+                        <input type="text" name="first-name" id="first-name" autocomplete="first-name" placeholder="Thor" required>
+                    </label>
+                    <label for="family-name">
+                    Last Name
+                        <input type="text" name="last-name" id="last-name" autocomplete="last-name" placeholder="Odinson" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="email">
+                    Email
+                        <input type="email" name="email" id="email" autocomplete="email" placeholder="thor.odinson@odinmail.com" required>
+                        <p class="requirements">Please enter a valid email address.</p>
+                    </label>
+                    <label for="phone">
+                    Phone Number
+                        <input type="phone" name="phone" id="phone" autocomplete="tel" placeholder=" " required>
+                        <p class="requirements">Please enter a correct phone number.</p>
+                    </label>
+                </div>
+                <div>
+                    <label for="password">
+                    Password
+                        <input type="password" name="password" id="password" autocomplete="password" required>
+                        <p class="requirements">Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.</p>
+                    </label>
+                    <label for="confirm">
+                    Confirm Password
+                        <input type="password" name="confirm" id="confirm" autocomplete="password" required>
+                        <p class="requirements">Please repeat your password.</p>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div>
+            <button form="create-account" type="submit" name="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a> </p>
+        </div>
+    </div>
+    
+</body>
+</html>
